@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sass bulma</title>
+<link rel="stylesheet" href="css/bulma.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+
+<section class="hero is-primary is-medium"> 
+ <!-- Hero head: will stick at the top -->
+ <div class="hero-head">
+  <nav class="navbar">
+   <div class="container">
+    
+    <div class="narbar-left-content">
+          <div class="navbar-brand"> <a class="navbar-item"> <img src="img/ownerre-logo.png" alt="Logo"> </a> <span class="navbar-burger burger" data-target="navbarMenuHeroA">  </span> </div>
+          <p><i class="fas fa-phone-volume"></i>888-228-4009</p>
+      </div>
+      
+    <div id="navbarMenuHeroA" class="navbar-menu">
+     <div class="navbar-end"> <a class="navbar-item is-active"> Home </a> <a class="navbar-item"> What we do/Price </a> 
+     <a class="navbar-item">Are you Selling</a><a class="navbar-item"> Buying? </a> <a class="navbar-item"> About Us </a> <a class="navbar-item"> Contact Us </a> 
+     <span class="navbar-item"> <a aria-haspopup="true" data-target="modal" class="button is-primary is-large modal-button button is-danger"> <span class="icon"> <i class="fas fa-sign-out-alt"></i> </span> <span>Log In/Sign up</span> </a> </span> </div>
+    </div>
+   </div>
+  </nav>
+ </div>
+ 
+ <!-- Hero content: will be in the middle -->
+</section>
+
+<section class="about-us-section contact-us">
+   <div class="about-overlay">
+      <h2 class="subtitle about-conten">
+         Contact Us
+      </h2>
+   </div>   
+</section>
+
+<nav class="breadcrumb" aria-label="breadcrumbs">
+ <div class="container">
+  <ul>
+    <li><a href="#">Bulma</a></li>
+    <li><a href="#">Documentation</a></li>
+    <li><a href="#">Components</a></li>
+    <li class="is-active"><a href="#" aria-current="page">Contact Us</a></li>
+  </ul>
+ </div> 
+</nav>  
+  
+<section id="contact-us-content">
+    <div class="container">
+        <div class="columns   is-centered is-multiline">
+            <!--<div class="column is-6">
+                <div class="contact-image">
+                     <img src="img/contact-up-img.jpg">
+                </div>
+            </div>-->
+            <div class="column is-half">
+               <div class="contact-us-form">
+                  <div class="field">
+                      <div class="control">
+                          <input class="input" type="text" placeholder="First-name">
+                      </div>
+                      
+                      <div class="control">
+                          <input class="input" type="text" placeholder="Last-name">
+                      </div>
+                  </div>
+                      
+                  <div class="field">
+                      <div class="control">
+                          <input class="input" type="email" placeholder="Enter Your Email">
+                      </div>
+                   </div>
+                   
+                   <div class="field">
+                      <div class="control">
+                          <input class="input" type="text" placeholder="Phone">
+                      </div>
+                   </div>
+                   
+                   <div class="field">
+                       <div class="control">
+                           <textarea class="textarea" type="text" placeholder="Message"></textarea>
+                       </div>
+                   </div>
+                   
+                   <div class="field is-grouped">
+                        <div class="control">
+                              <button class="button is-link">Submit</button>
+                        </div>
+                   </div>
+
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <div class="box">
+      <article class="media">
+        <div class="media-content">
+          <div class="content">
+            <h3>LOGIN</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit.
+            </p>
+            
+            <div class="media-form">
+                <div class="field">
+                      <div class="control">
+                        <input class="input" type="email" placeholder="Your email address">
+                      </div>
+                      <div class="control">
+                        <input class="input" type="password" placeholder="Password">
+                      </div>
+                      <div class="field">
+                          <p class="control">
+                            <button class="button is-success">
+                              Login
+                            </button>
+                          </p>
+                      </div>
+                      
+                </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </article>
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+
+<footer class="footer">
+ <div class="container">
+  <div class="content">
+   <div class="social_media">
+    <a href="#"><i class="fab fa-facebook-f"></i></a> 
+   <!--<a href="#"><i class="fab fa-twitter"></i></a>  
+   <a href="#"><i class="fab fa-youtube"></i></a> 
+   <a href="#"><i class="fab fa-pinterest-p"></i></a> 
+   <a href="#"><i class="fab fa-instagram"></i></a> </div>-->
+   <ul class="footer-menu">
+    <li> <a href="#" class="nav-link active">WHAT WE DO</a></li>
+    <li> <a href="#" class="nav-link">ABOUT US</a></li>
+    <li> <a href="#" class="nav-link">CONTACT US</a></li>
+    <li> <a href="#" class="nav-link">TERM OF USE</a></li>
+    <li><a href="#" class="nav-link">PRIVACY POLICY</a></li>
+   </ul>
+  </div>
+ </div>
+ <div class="footer-copyright"> 
+ <div class="container">
+ <div class="copyright-text">Copyright &copy; 2018 OwnersRE</div>
+ </div>
+ </div>
+ 
+ </div>
+</footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://bulma.io/vendor/js.cookie-2.1.4.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+ 
+   
+</body>
+</html>

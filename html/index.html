@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sass bulma</title>
+<link rel="stylesheet" href="css/bulma.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+
+<section class="hero is-primary is-medium"> 
+ <!-- Hero head: will stick at the top -->
+ <div class="hero-head">
+  <nav class="navbar">
+   <div class="container">
+   
+      <div class="narbar-left-content">
+          <div class="navbar-brand"> <a class="navbar-item"> <img src="img/ownerre-logo.png" alt="Logo"> </a> <span class="navbar-burger burger" data-target="navbarMenuHeroA">  </span> </div>
+          <p><i class="fas fa-phone-volume"></i>888-228-4009</p>
+      </div>
+          
+          
+    <div id="navbarMenuHeroA" class="navbar-menu">
+     <div class="navbar-end"> <a class="navbar-item is-active"> Home </a> <a class="navbar-item"> What we do/Price </a> 
+     <a class="navbar-item">Are you Selling</a><a class="navbar-item"> Buying? </a> <a class="navbar-item"> About Us </a> <a class="navbar-item"> Contact Us </a> 
+     <span class="navbar-item"> <a aria-haspopup="true" data-target="modal" class="button is-primary is-large modal-button button is-danger"> <span class="icon"> <i class="fas fa-sign-out-alt"></i> </span> <span>Log In/Sign up</span> </a> </span> </div>
+    </div>
+   </div>
+   
+   
+   
+  </nav>
+ </div>
+ 
+ <!-- Hero content: will be in the middle -->
+ <div class="hero-body">
+  <div class="hero-body-bqck">
+  <div class="container">
+   <div class="columns">
+    <div class="column is-half">
+     <h1 class="title"> WE HELP YOU SELL YOUR HOME, YOURSELF. </h1>
+     <ul>
+        <li class="subtitle">Save thousands of Dollars and hours of your time.</li>
+        <li class="subtitle">The only service of its kind.</li>
+        <li class="subtitle">We dont just market your home, we help you through the entire process.</li>
+        <li class="subtitle">The most efficient and cost effective way to sell your home without a realtor exists here.</li>
+     </ul>   
+     <a class="button is-danger is-rounded">I'M SELLING</a> <a class="button is-black is-rounded">I'M BUYING</a> </div>
+   </div>
+  </div>
+  </div>
+ </div>
+</section>
+<section id="listing_call_us">
+ <div class="container">
+  <div class="columns">
+   <!--<div class="column  is-2">
+    <div class="owners-dollar"><img src="img/money1.png" alt=""></div>
+   </div>-->
+   <div class="column">
+    <h4 class="title">Click here to enter your listing. Or<br>
+     <span>call us at 888-228-4009</span>for more info</h4>
+   </div>
+   <div class="column  is-3"><a class="button is-danger is-rounded">CONTACT US</a></div>
+  </div>
+ </div>
+</section>
+
+<section id="what_we_do">
+<div class="columns">
+   <div class="column"><div class="section-heading">
+    <h1 class="title">WHAT WE DO/PRICE </h1>
+   </div> </div>
+  </div>
+
+ <div class="container">
+  <!--<div class="tabs">
+   <ul>
+    <li class="is-active">
+     <a class="tablinks active" onclick="openCity(event, 'search')">
+     <h5 class="title is-5"> Search By Location</h5>
+     </a> </li>
+    <li> <a  class="tablinks" onclick="openCity(event, 'mortgage')">
+     <h5 class="title is-5">Mortgage calculator</h5>
+     </a> </li>
+    <li> <a  class="tablinks" onclick="openCity(event, 'tricks')">
+     <h5 class="title is-5">Expert Tips and Tricks</h5>
+     </a> </li>
+   </ul>
+  </div>-->
+  <div id="search" class="tabcontent" style="display:block;">
+   <div class="columns"><div class="column">
+   
+   <img src="img/Slider-01.png" alt=""> </div> 
+   <div class="column">
+    <!--<h4 class="title is-5"></h4>
+    <a href="#" class="owners-text">Owners.com</a>-->
+    
+    <div class="what-we-do-te">
+        <h4>For one flat fee we provide you with:</h4>
+        <ul>
+            <li>Easy to use property input functions to enter and update photos videos asking price description and details about your home.</li>
+            <li>Marketing-Where do buyers start their home buying search? Online. If someone is looking for a home in your area, they will find it. Plus we give you a yard sign or window sign.</li>
+            <li>Website-we provide you with a personalized website, the web address being your homes address, for example www.123mainstreetRE.com. Which features ONLY your home.</li>
+        </ul>
+        <a href="what-we-do.html" class="what-we-read-btn">READ MORE</a>
+        <a class="vid-play" href="#"><i class="far fa-play-circle"></i> WATCH THE VIDEO</a> </div> </div>
+    </div>
+  </div>
+   <div id="mortgage" class="tabcontent">
+   <div class="columns"><div class="column">
+   
+   <img src="img/Slider-02.png" alt=""> </div> 
+   <div class="column">
+    <!--<h4 class="title is-5"></h4>
+    <a href="#" class="owners-text">Owners.com</a>-->
+    <p>We charge a flat fee of $250 for the first 6 months.  We believe you will sell your home sooner than this.  However if you need the website available for a longer period of time, it is $100 for each additional 6 months. We never up sell.  We never sell your information to anyone.  We are only concerned about the sale of your home.</p>
+    <p>We never up sell.  We never sell your information to anyone.  We are only concerned about the sale of your home.</p>
+    <p><a href="#">Click here</a> to enter your listing.  Or call us at 888 for more info.</p>
+    <a class="vid-play" href="#"><i class="far fa-play-circle"></i> WATCH THE VIDEO</a> </div> </div>
+  </div>
+  <div id="tricks" class="tabcontent">
+   <div class="columns"><div class="column">
+   
+   <img src="img/Slider-03.png" alt=""> </div> 
+   <div class="column">
+    <!--<h4 class="title is-5"></h4>
+    <a href="#" class="owners-text">Owners.com</a>-->
+    <p>We charge a flat fee of $250 for the first 6 months.  We believe you will sell your home sooner than this.  However if you need the website available for a longer period of time, it is $100 for each additional 6 months. We never up sell.  We never sell your information to anyone.  We are only concerned about the sale of your home.</p>
+    <p>We never up sell.  We never sell your information to anyone.  We are only concerned about the sale of your home.</p>
+    <p><a href="#">Click here</a> to enter your listing.  Or call us at 888 for more info.</p>
+    <a class="vid-play" href="#"><i class="far fa-play-circle"></i> WATCH THE VIDEO</a> </div> </div>
+  </div>
+   
+ 
+ </div>
+</section>
+
+<section id="about">
+ <div class="container">
+  <div class="columns">
+  <div class="column"> <div class="section-heading">
+    <h1 class="title">ABOUT US </h1>
+   </div>
+  </div>
+  </div>
+  <div class="columns">
+   <div class="column is-half">
+    <!--<h4 class="title is-4">OWNERSRE.COM</h4>-->
+    <p><a href="#">OWNERSRE.COM</a> was created because of the lack of services that are offered to sellers of Real Estate. If you want to buy a home, there are 100's of tools for you to find homes anywhere, learn about neighborhoods, schools, even the history of owners for the property you live in and what they paid for it, to getting pre qualified online with a lender, calculating mortgage payments, etc.</p>
+    <p>But if your selling, well, you can find a company that will market your home or you can list with a realtor, there are your options. Thats right. You can list your home on a website for fee like zillow, or you can pay a realtor to sell your home. Until now.</p>
+    <!--<a href="#" class="more-link">Read More</a>-->
+   </div>
+   <div class="column"><img src="img/home-side-img.png" alt=""></div>
+  </div>
+ </div>
+</section>
+
+<div class="modal" id="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <div class="box">
+      <article class="media">
+        <div class="media-content">
+          <div class="content">
+            <h3>LOGIN</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit.
+            </p>
+            
+            <div class="media-form">
+                <div class="field">
+                      <div class="control">
+                        <input class="input" type="email" placeholder="Your email address">
+                      </div>
+                      <div class="control">
+                        <input class="input" type="password" placeholder="Password">
+                      </div>
+                      <div class="field">
+                          <p class="control">
+                            <button class="button is-success">
+                              Login
+                            </button>
+                          </p>
+                      </div>
+                      
+                </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </article>
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+
+<footer class="footer">
+ <div class="container">
+  <div class="content">
+   <div class="social_media">
+    <a href="#"><i class="fab fa-facebook-f"></i></a> 
+   <!--<a href="#"><i class="fab fa-twitter"></i></a>  
+   <a href="#"><i class="fab fa-youtube"></i></a> 
+   <a href="#"><i class="fab fa-pinterest-p"></i></a> 
+   <a href="#"><i class="fab fa-instagram"></i></a> </div>-->
+   <ul class="footer-menu">
+    <li> <a href="#" class="nav-link active">WHAT WE DO</a></li>
+    <li> <a href="#" class="nav-link">ABOUT US</a></li>
+    <li> <a href="#" class="nav-link">CONTACT US</a></li>
+    <li> <a href="#" class="nav-link">TERM OF USE</a></li>
+    <li><a href="#" class="nav-link">PRIVACY POLICY</a></li>
+   </ul>
+  </div>
+ </div>
+ <div class="footer-copyright"> 
+ <div class="container">
+ <div class="copyright-text">Copyright &copy; 2018 OwnersRE</div>
+ </div>
+ </div>
+ 
+ </div>
+</footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://bulma.io/vendor/js.cookie-2.1.4.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+ 
+   
+</body>
+</html>

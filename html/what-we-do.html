@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sass bulma</title>
+<link rel="stylesheet" href="css/bulma.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+<section class="hero is-primary is-medium"> 
+ <!-- Hero head: will stick at the top -->
+ <div class="hero-head">
+  <nav class="navbar">
+   <div class="container">
+    <div class="narbar-left-content">
+     <div class="navbar-brand"> <a class="navbar-item"> <img src="img/ownerre-logo.png" alt="Logo"> </a> <span class="navbar-burger burger" data-target="navbarMenuHeroA"> </span> </div>
+     <p><i class="fas fa-phone-volume"></i>888-228-4009</p>
+    </div>
+    <div id="navbarMenuHeroA" class="navbar-menu">
+     <div class="navbar-end"> <a class="navbar-item is-active"> Home </a> <a class="navbar-item"> What we do/Price </a> <a class="navbar-item">Are you Selling</a><a class="navbar-item"> Buying? </a> <a class="navbar-item"> About Us </a> <a class="navbar-item"> Contact Us </a> <span class="navbar-item"> <a aria-haspopup="true" data-target="modal" class="button is-primary is-large modal-button button is-danger"> <span class="icon"> <i class="fas fa-sign-out-alt"></i> </span> <span>Log In/Sign up</span> </a> </span> </div>
+    </div>
+   </div>
+  </nav>
+ </div>
+ 
+ <!-- Hero content: will be in the middle --> 
+</section>
+<section class="what-we-do-section">
+ <div class="what-we-overlay">
+  <h2 class="subtitle pricing-conten"> What we do/Pricing </h2>
+ </div>
+</section>
+<nav class="breadcrumb" aria-label="breadcrumbs">
+ <div class="container">
+  <ul>
+   <li><a href="#">Bulma</a></li>
+   <li><a href="#">Documentation</a></li>
+   <li><a href="#">Components</a></li>
+   <li class="is-active"><a href="#" aria-current="page">What We Do/Pricing</a></li>
+  </ul>
+ </div>
+</nav>
+<section id="what-we-text">
+ <div class="container">
+  <div class="columns">
+   <div class="what-we-do-content">
+    <h4>For one flat fee we provide you with:</h4>
+    <ul>
+     <!--<li>Easy to use property input functions to enter and update photos videos asking price description and details about your home.  Click here to learn more. <a href="#easyproper-cont" class="tablinks tabs-toggle" onclick="openCity(event, 'easyproper')">Click here</a></li>-->
+     <li>Marketing-Where do buyers start their home buying search? Online.  If someone is looking for a home in your area, they will find it.  Plus we give you a yard sign or window sign. Click here to learn more. <a href="#marketing-cont" class="tablinks" onclick="openCity(event, 'marketing')">Click here</a></li>
+     <!--<li>Website-we provide you with a personalized website, the web address being your homes address, for example www.123mainstreetRE.com. Which features ONLY your home.  Click here to learn more. <a href="#website-cont" class="tablinks tabs-toggle" onclick="openCity(event, 'website')">Click here</a> </li>-->
+     <li>Transaction Platform-This website will be the barrier between you and anyone interested in the home.  They will ask questions, make appointments, provide pre qualification documents, make offers, and much more all over this website. This way you are dealing with serious buyers.  And saving you hours of time on the phone stating the same thing to everyone interested. And saving you hours of time speaking to real estate agents whom only want you to list your home with them and have no serious buyers. Click here to learn more. <a href="#website-cont" class="tablinks tabs-toggle" onclick="openCity(event, 'website')">Click here</a></li>
+     <li>Virtual Calendar- It is a place for your to keep track of your showings, and those who have seen the home. This calendar can be customized by you so that you can block out days and times that are not good for showings.  You can indicate when an open house is going to take place.  Click  here to learn more. <a href="#virtual-cont" class="tablinks tabs-toggle" onclick="openCity(event, 'virtual')">Click here</a></li>
+     <li>Alerts and Notifications throughout the sales process.  For example, once you are in contract, the system will alert you to when you should be looking out for the buyers mortgage approval. Click here to learn more. <a href="#process-cont" class="tablinks tabs-toggle" onclick="openCity(event, 'process')">Click here</a></li>
+    </ul>
+    <div class="what-pera-text">
+     <p>We provide you with everything you need to sell your home, from Beginning to End.</p>
+     <p>We charge a flat fee of $250 for the first 6 months.  We believe you will sell your home sooner than this.  However if you need the website available for a longer period of time, it is $100 for each additional 6 months.</p>
+     <p>We never up sell.  We never sell your information to anyone.  We are only concerned about the sale of your home.</p>
+     <p>Click here to enter your listing.  Or call us at 888-228-4009 for more info.</p>
+    </div>
+    <div class="tabs-toggle">
+     <div class="tabs">
+      <ul>
+       <li class="is-active"> <a class="tablinks active" onclick="openCity(event, 'easyproper')" id="easyproper-cont"> Easy to use property input functions. </a> </li>
+       <li> <a  class="tablinks" onclick="openCity(event, 'marketing')" id="marketing-cont"> Marketing </a> </li>
+       <li> <a  class="tablinks" onclick="openCity(event, 'website')" id="website-cont"> Website </a> </li>
+       <li> <a  class="tablinks" onclick="openCity(event, 'virtual')" id="virtual-cont"> Virtual Calendar </a> </li>
+       <li> <a  class="tablinks" onclick="openCity(event, 'process')" id="process-cont"> Process </a> </li>
+      </ul>
+     </div>
+     <div id="easyproper" class="tabcontent what-pera-text-easy easyproper" style="display:block;">
+     <!-- <p class="font-ittelic">Easy to use property input functions.</p>-->
+      <p>It all starts here.  We provide you with an easy to use state of the art property input system, were you can update and change the information whenever you want.  You will be able to upload as many photos as you like.  You can upload video.  There is a field for you to input your description of the property.  Fields to enter the vitals, such as property taxes, size of the home, size of the lot, number of bedrooms, number of bathrooms, and many more details.  You have full control over what information goes here.</p>
+      <!-- <p>Scroll down to see how we market your home, one of the most important functions you need when selling your home.</p>--> 
+     </div>
+     <div id="marketing" class="tabcontent what-pera-text-easy marketing">
+      <p class="font-ittelic">Marketing </p>
+      <p>Its all about the marketing because this is how your property will get exposure.  Most buyers if not all start their search for a home online.  If someone is looking for a home in your area, they will find your home. It will be available on all of the popular websites such as Zillow, Trulia, and many more.  How?  It is simple.  Most of these popular real estate search engines like Zillow allow those owners who do not have a realtor to enter a home for sale for free.  So we will simply enter your listing for you, uploading the pictures description of the property and information you provided. Your contact information. As well as your property's personalized website (see below.) There are services that we subscribe to, which is included in our one time fee, that automatically transmit your listing to over 100 real estate websites.  These websites also allow you to enter a website where the property can be found.  Your website is also optimized so that it appears on all the major search engines such as Google.</p>
+      <p> Your goal is to get everyone to go to your properties personalized website.  Why?
+       Because it will save you literally 100's of hours answering calls about the home.  90% of them coming from realtors trying to get you to list with them.  This way you have a barrier, and anyone who wants to see the home has to make an appointment through the website and follow the process. This will filter all the interest to those that are serious about your home.  This will mean you deal with only serious buyers.</p>
+      <p>By the way we also provide you with a yard sign, or a window sign which every you prefer that announces your home is for sale to your neighbors and provides the website where your property is featured.  This way you dont need to answer the same questions over and over again.  Just say, go to www.123mainStRE.com and you will see everything there.</p>
+      <p>For more information on the process Scroll down, it starts with your property website.</p>
+     </div>
+     <div id="website" class="tabcontent what-pera-text-easy website">
+      <p class="font-ittelic">Website</p>
+      <p>We provide you with a website whose web address will be the address of the property, such as www.123mainStRE.com.  This website will have photos of the property, as well as the asking price, description, and information about the home such as property taxes, lot size, and much more.  Your website does not offer the visitor a place to search other homes.  It does not offer any other services.  It features your home and that is it.</p>
+      <p> If a potential buyer or real estate agent with a client want to see the home here is where they will request an appointment.  If they have a question, here is where they will ask it. The reason for this control is to make sure all the buyers are properly vetted before making an appointment.  And any special message you may have for a realtor, such as how much commission you will pay, can be delivered automatically.  The website will also be the central location for you to go to for info about your selling process. Meaning, all buyers contact info, attorney info, pre qualification documents, lender and loan officer info is here.  You can track your appointments and those that have seen the home. </p>
+      <p>All offers are made on this website.  Why would you want all the offers to go through the website? </p>
+      <p>Many sellers often make a mistake in that they are only interested in the amount of the offer. However to properly evaluate an offer you need more than that.  You need to know information such as how much is the down payment.  This could indicate how serious of a buyer you have. For example, If you have two offers that are for the same amount, but one is putting down $2500 when the contract is signed where the other is putting down $10,000 when the contract is signed. Which offer is better?</p>
+      <p>Also and equally as important, if the offer includes the buyer obtaining a mortgage, how reliable is the pre qualification letter that was provided?  Because each person whom wants to make an offer must provide their prequalification letter, our system will reach out to the loan officer. Getting answers from the loan officer whom issued the pre approval to pertinent questions like credit score, length of time at employer, and other questions will help determine the strength of an offer.</p>
+      <p>Also all whom come to the website and request an appointment or ask a question must log in.  These potential buyers become a part of your database?  What does this mean? It means that you can send an email in a few clicks to all those whom have seen your home in the past, updating them on the status, such as a price change or that it is back on the market because a buyer you had fell through.  Or any other announcement you want to make such as an open house date.</p>
+     <!-- <p>Scroll down to understand the importance of the virtual calendar.  And continue past the calendar to understand the full scope of services we give you.</p>-->
+     </div>
+     <div id="virtual" class="tabcontent what-pera-text-easy virtual">
+      <p class="font-ittelic">Virtual Calendar</p>
+      <p>We have created a one of its kind seller calendar for you to customize. What this calendar does is allow for those whom want to see your home with a place to schedule the appointment, and for you to confirm the appointment. It is a place where you can block out pre determined times that you are not available to show the home. It also helps you keep track of your showings, when and to whom showed the home.</p>
+      <p>We believe strongly in the value of an open house.  It gives you an opportunity to showcase your home and to effectively use your time.  Lastly should you get alot of traffic at the open house, you could inspire higher offers.  You can update your calendar with open house dates that will be updated on all the locations throughout the internet where your home appears. </p>
+      <p>This calendar is a great tool to effectively save you time, and to keep a history of showings.</p>
+     </div>
+     <div id="process" class="tabcontent what-pera-text-easy process">
+      <p class="font-ittelic">Process</p>
+      <p>There is no service that offers the virtual assistant tool that we have.  The goal is to save you time, provide you with an efficient way to respond to all interested parties, and to provide you with a easy way to track the progress of the sale, making sure everything is moving in a timely manner, and alerting you to issues or bumps in the sales process.</p>
+      <p>As you read we offer you a platform, your property's website, to transact your sale on.  Buyers or realtors with buyers can make appointments, provide their prequalifcation documents, ask questions, and see the property information on this website. But there is much, much more to selling your home.</p>
+      <p>When requests for appointments are made, in order to be confirmed the buyer has to provide their pre qualification letter if they are buying with a mortgage, or proof of funds of they are buying for all cash.  The system will generate emails to the loan officers of the pre qualification letters asking pertinent questions to help you determine the reliability of the pre qualification.  You can confirm appointments or suggest alternative appointment time and day through the system.</p>
+      <p>You can reply to all questions.</p>
+      <p>All offers are made through the system. This is important as the system will ask pertinent questions to help you properly evaluate each offer being made.  Once you have agreed to an offer, the system will notify your attorney with all the pertinent information needed to create a contract of sale.</p>
+      <p>Our system will also provide you and the parties to the transactions with reminders to important milestones.  For example, after you have signed a contract of sale, the system will send reminder emails to the buyer to send the mortgage approval.  You will be sent alerts at pre assigned times in the sales process to look out for the mortgage approval, the appraisal inspection, and many other milestones to make sure the sale of your home is moving along.</p>
+      <p>This proven process will help you stay on top of your sale, alerting you to delays, and when to be concerned about something, or when to be prepared for closing.</p>
+      <p>We do it all.</p>
+      <p>To sell your property click here, or call us at </p>
+     </div>
+    </div>
+    <div class="call-section">
+     <p>Call us at <a href="#">888-228-4009</a> for more info</p>
+    </div>
+   </div>
+  </div>
+ </div>
+ </div>
+</section>
+<div class="modal" id="modal">
+ <div class="modal-background"></div>
+ <div class="modal-content">
+  <div class="box">
+   <article class="media">
+    <div class="media-content">
+     <div class="content">
+      <h3>LOGIN</h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit. </p>
+      <div class="media-form">
+       <div class="field">
+        <div class="control">
+         <input class="input" type="email" placeholder="Your email address">
+        </div>
+        <div class="control">
+         <input class="input" type="password" placeholder="Password">
+        </div>
+        <div class="field">
+         <p class="control">
+          <button class="button is-success"> Login </button>
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </article>
+  </div>
+ </div>
+ <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<footer class="footer">
+ <div class="container">
+  <div class="content">
+   <div class="social_media"> <a href="#"><i class="fab fa-facebook-f"></i></a> 
+    <!--<a href="#"><i class="fab fa-twitter"></i></a>  
+   <a href="#"><i class="fab fa-youtube"></i></a> 
+   <a href="#"><i class="fab fa-pinterest-p"></i></a> 
+   <a href="#"><i class="fab fa-instagram"></i></a> </div>-->
+    <ul class="footer-menu">
+     <li> <a href="#" class="nav-link active">WHAT WE DO</a></li>
+     <li> <a href="#" class="nav-link">ABOUT US</a></li>
+     <li> <a href="#" class="nav-link">CONTACT US</a></li>
+     <li> <a href="#" class="nav-link">TERM OF USE</a></li>
+     <li><a href="#" class="nav-link">PRIVACY POLICY</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="footer-copyright">
+   <div class="container">
+    <div class="copyright-text">Copyright &copy; 2018 OwnersRE</div>
+   </div>
+  </div>
+ </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://bulma.io/vendor/js.cookie-2.1.4.min.js"></script> 
+<script src="js/main.js"></script> 
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script> 
+<script>
+   jQuery('.tabs-toggle').click(function(){
+   var id = jQuery(this).attr('href');
+   jQuery(id).addClass('active');
+});
+</script>
+</body>
+</html>

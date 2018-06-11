@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i')
+$font-stack:    'Roboto', sans-serif
+$primary-color: #444
+$primary-bg:  #f00000
+$primary-bg-hover: #f41c1c
+
+body
+  font: 14px $font-stack
+  color: $primary-color
+  line-height: 24px
+ 
+.button.is-danger 
+  background-color: $primary-bg
+  
+.button.is-danger:hover 
+  background-color: $primary-bg-hover
+ 
+.title:not(.is-spaced) + .subtitle
+  margin-top: 0
+  
+.navbar-item img
+    max-height: 50px
+
+section.hero 
+  background-image: url("../img/Home-Banner.png")
+  background-position: center top
+  background-size: cover
+  
+  .hero-body
+    ul
+      margin-bottom: 30px
+    .title
+      color: #000000
+	
+    .subtitle
+      color: #333333
+      font-size: 18px
+      line-height: 28px
+      margin-bottom: 5px
+      position: relative  
+    .subtitle::before
+      background: #000000 none repeat scroll 0 0
+      border-radius: 50%
+      content: ""
+      height: 5px
+      left: -13px
+      position: absolute
+      top: 12px
+      width: 5px
+    .is-rounded
+      margin-right: 20px
+
+section#listing_call_us
+  background: #000000 none repeat scroll 0 0
+  padding: 60px 0
+  
+  .button
+    font-size: 24px	
+  .title
+    color: #fff
+    span 
+      padding-right: 8px
+	
+  .owners-dollar
+    max-width: 90px
+.hero	
+  .navbar
+    padding: 10px 0
+    background-color: #fff
+    .narbar-left-content 
+      .navbar-brand
+        border-right: 1px solid #f00000
+        display: inline-block
+        padding-right: 10px
+        width: auto
+        vertical-align: middle
+      p
+        color: #222222
+        display: inline-block
+        font-size: 14px
+        padding-left: 15px
+        vertical-align: middle
+        svg
+          color: #f00000
+          padding-right: 10px
+          width: auto
+  
+    .navbar-menu
+      .navbar-end
+        a
+          color: #333333 !important
+          text-transform: uppercase
+        .navbar-item
+          .is-danger
+            color: #fff !important
+        a.is-active,
+        a
+          &.is-danger
+            &:hover
+              background-color: #f00000
+              color: white
+		
+%full-section
+  padding: 80px 0
+	
+#about	
+  @extend %full-section
+  .more-link 
+    border-bottom: 2px solid #ff0000
+    color: #000000
+    font-weight: 700
+    margin-top: 20px
+    text-transform: uppercase
+    display: inline-block
+  p
+    line-height: 27px
+    margin-bottom: 15px	
+  
+.section-heading
+  margin-bottom: 30px
+  text-align: center
+  width: 100%
+  .title,
+    margin-bottom: 10px
+    color: #000
+  .subtitle
+    width: 100%
+	
+#what_we_do
+  @extend %full-section
+  .tabs
+    ul	
+      border-bottom: 0
+      display: inline-block
+      width: 100%
+      text-align: center
+      li
+        display: inline-block
+        &:hover
+          a
+            background-color: #000
+        a
+          background: #f00000
+          border-radius: 0px 0px 0 0
+          padding: 10px 30px
+          text-align: center
+          color: #ffffff
+          width: 100%
+          border: none
+          .svg-inline--fa
+            height: 20px
+            margin-right: 10px
+            width: 20px 
+        .title
+          color: #ffffff
+          font-size: 17px
+        .active
+          background-color: #000
+
+  .vid-play
+    color: #000000
+    float: right
+    font-size: 18px
+    font-weight: 700
+    margin-top: 30px
+    .svg-inline--fa
+      color: #ff0000
+      height: 37px
+      margin-right: 6px
+      vertical-align: middle
+      width: 37px
+  h4.title
+    color: #000
+  .what-we-do-te 
+    h4
+      color: #222222
+      font-size: 18px
+      font-weight: 700
+      margin-bottom: 20px
+    ul
+      color: #666666
+      font-size: 14px
+      line-height: 27px
+      margin-bottom: 20px
+      padding-left: 30px
+      li
+        margin-bottom: 10px
+        position: relative
+        &::before
+          background: #666666 none repeat scroll 0 0
+          border-radius: 50%
+          content: ""
+          height: 7px
+          left: -15px
+          position: absolute
+          top: 11px
+          width: 7px
+        &:last-child
+          margin: 0
+    a
+      &.what-we-read-btn
+        color: #222222
+        font-weight: bold
+        position: relative
+        &::before
+          background: #f00000 none repeat scroll 0 0
+          bottom: -5px
+          content: ""
+          height: 3px
+          left: 0
+          position: absolute
+          width: 50px		
+  
+#what-we-text
+  .what-we-do-content 
+    .tabcontent
+      display: none
+    .tabs
+      ul	
+        border-bottom: 0
+        display: inline-block
+        width: 100%
+        margin: 0
+        padding: 0
+        li
+          display: inline-block
+          list-style: none
+          margin: 0
+          position: relative
+          &:hover
+            a
+              background-color: #000
+          a
+            background: #f00000
+            border-radius: 0px 0px 0 0
+            padding: 5px 10px
+            text-align: center
+            color: #ffffff
+            width: 100%
+            border: none
+          .active
+            background-color: #000
+        li::before
+          content: none
+	
+footer.footer
+  background-color: #0b0b0b
+  text-align: center
+  padding: 60px 0 0 0
+  .social_media
+    margin-bottom: 15px
+    a
+      margin: 0 7px
+      color: #fff
+      .svg-inline--fa
+        height: 23px
+        width: 23px 
+  .footer-menu
+    list-style: none
+    margin: 0
+    li
+      display: inline-block
+      margin: 0 20px
+      a
+        color: #959799
+        font-size: 11px
+        position: relative
+      a:after
+        background: #959799
+        content: ""
+        height: 2px
+        position: absolute
+        right: -21px
+        top: 8px
+        width: 2px
+    li:last-child 
+      a::after
+        content: none
+		
+  .footer-copyright
+    background: #000000
+    color: #414345
+    font-size: 12px
+    margin-top: 40px
+    padding: 18px 0
+	  
+.tabcontent
+  display: none
+.navbar-end 
+  .navbar-item
+    padding: 0 8px
+    font-size: 12px
+
+.what-we-do-section
+  background-image: url(../img/what-we-do-banner-1.jpg)
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  height: 200px
+  position: relative
+  .what-we-overlay
+    background: rgba(34, 34, 34, 0.6) none repeat scroll 0 0
+    height: 100%
+    text-align: center
+    width: 100%
+    .subtitle.pricing-conten
+      color: #ffffff
+      font-size: 36px
+      font-weight: 600
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 100%
+    .subtitle.pricing-conten::before
+      background: #ffffff none repeat scroll 0 0
+      bottom: -10px
+      content: ""
+      height: 3px
+      left: 0
+      margin: auto
+      position: absolute
+      right: 0
+      width: 150px  
+#what-we-text
+  padding: 70px 0	
+  .what-we-do-content
+    border-radius: 5px
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2)
+    margin: auto
+    padding: 30px
+    width: 80%
+    line-height: 27px
+    h4
+      color: #222222
+      font-size: 20px
+      font-weight: 600
+      margin-bottom: 30px
+    ul
+      color: #222222
+      padding-left: 30px
+      margin-bottom: 30px
+      li
+        margin-bottom: 15px
+        position: relative
+      li::before
+        background: #222222 none repeat scroll 0 0
+        border-radius: 50%
+        content: ""
+        height: 6px
+        left: -14px
+        position: absolute
+        top: 11px
+        width: 6px
+      li:last-child
+        margin: 0
+    .what-pera-text
+      margin-bottom: 30px
+      p
+        margin-bottom: 15px
+      p:last-child
+        margin: 0
+    .what-pera-text-easy
+      margin-bottom: 30px
+      max-height: 187px
+      overflow-y: auto
+      p
+        margin-bottom: 15px
+      p.font-ittelic 
+        color: #222222
+        font-size: 18px
+        font-style: italic
+        font-weight: 600
+        margin-bottom: 10px
+      p:last-child
+        margin: 0
+		
+nav.breadcrumb
+  background: #222222 none repeat scroll 0 0
+  padding: 5px 0
+  margin: 0 !important
+  li.is-active 
+    a
+      color: #f00000
+  a
+    color: #ffffff
+  a:hover
+    color: #f00000
+	
+.about-us-section
+  background-image: url(../img/about-us-banner.jpg)
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  height: 200px
+  position: relative
+  .about-overlay
+    background: rgba(34, 34, 34, 0.4) none repeat scroll 0 0
+    height: 100%
+    text-align: center
+    .subtitle.about-conten
+      color: #ffffff
+      font-size: 36px
+      font-weight: 600
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 100%
+    .subtitle.about-conten::before
+      background: #ffffff none repeat scroll 0 0
+      bottom: -10px
+      content: ""
+      height: 3px
+      left: 0
+      margin: auto
+      position: absolute
+      right: 0
+      width: 100px
+#about-us-content
+  padding: 70px 0
+  position: relative
+  p
+    color: #666666
+    line-height: 27px
+    margin-bottom: 15px
+a.owners-text
+  display: table
+  margin-bottom: 5px
+  width: 100%
+  
+.about-us-section.shop-section
+  background-image: url(../img/0169124.jpg)
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  height: 200px
+  position: relative
+  
+#shop-content
+  padding: 70px 0
+  position: relative
+  .shop-top-header-content
+    display: table
+    width: 100%
+    margin-bottom: 20px
+    .espada-text
+      float: left
+      width: 50%
+      h2
+        color: #222222
+        font-size: 32px
+        font-weight: 600
+        line-height: 36px
+        margin-bottom: 15px
+        svg
+          color: #f00000
+          font-size: 24px
+          padding-right: 10px
+          width: auto
+        span
+          display: inline-block
+          vertical-align: top
+          width: 95%
+          position: relative
+        span::before
+          background: #f00000 none repeat scroll 0 0
+          bottom: -5px
+          content: ""
+          height: 3px
+          left: 0
+          position: absolute
+          width: 100px
+      p
+        color: #666666
+        svg
+          color: #f00000
+          font-size: 16px
+          padding-right: 10px
+          width: auto
+        img
+          display: inline-block
+          padding-right: 3px
+          vertical-align: middle
+          width: 21px
+		  
+		  
+    .espada-right-text
+      float: right
+      text-align: right
+      width: 50%
+      p
+        color: #222222
+        float: right
+        font-weight: 500
+        position: relative
+        width: auto
+        margin-bottom: 10px
+      p::before
+        background: #f00000 none repeat scroll 0 0
+        border-radius: 50%
+        content: ""
+        height: 8px
+        left: -15px
+        position: absolute
+        top: 9px
+        width: 8px
+      h3
+        color: #222222
+        display: table
+        font-size: 40px
+        font-weight: 600
+        margin-bottom: 10px
+        width: 100%
+      a
+        &.btn.question-btn
+          background: #f00000 none repeat scroll 0 0
+          border-radius: 5px
+          clear: both
+          color: #ffffff
+          float: right
+          margin-bottom: 5px
+          padding: 5px 0
+          text-align: center
+          text-transform: uppercase
+          width: 200px
+        &:last-child
+          &.btn.question-btn
+            margin-bottom: 0
+  
+  .shop-images
+    margin-bottom: 30px
+  .shop-images-bottom-space
+    display: table
+    margin-bottom: 65px
+    width: 100%
+    .shop-images-width
+      float: left
+      padding: 5px
+      width: 49%
+    .shop-images-width:first-child
+      padding-left: 0
+      padding-top: 0
+    .shop-images-width:nth-child(2)
+      padding-right: 0
+      padding-top: 0
+    .shop-images-width:nth-child(3)
+      padding-bottom: 0
+      padding-left: 0
+    .shop-images-width:last-child
+      padding-bottom: 0
+      padding-right: 0
+    .shop-images-width:nth-child(odd)
+      float: left
+    .shop-images-width:nth-child(even)
+      float: right
+	  
+  .shop-image-bottom-text 
+    ul 
+      li
+        float: left
+        width: 50%
+        color: #666666
+        min-height: 35px
+        svg
+          color: #f00000
+          font-size: 16px
+          padding-right: 8px
+          width: auto
+        a
+          color: #666666
+          i
+            display: inline-block
+            min-width: 47px
+            padding-right: 0
+            padding-top: 3px
+            vertical-align: middle	  
+	  
+  .shop-details 
+    h2
+      color: #222222
+      font-size: 20px
+      font-weight: 500
+      margin-bottom: 15px
+    p
+      color: #666666
+      line-height: 27px
+      margin-bottom: 15px
+    .btn.read-btn
+      color: #222222
+      font-weight: bold
+      position: relative
+    .btn.read-btn::before
+      background: #f00000 none repeat scroll 0 0
+      bottom: -6px
+      content: ""
+      height: 3px
+      left: 0
+      position: absolute
+      width: 30px
+	  
+#modal 
+  .modal-content
+    background: rgba(240, 0, 0, 0.5) none repeat scroll 0 0
+    border-radius: 0
+    height: auto
+    width: 30%
+    .box
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0
+      color: #ffffff
+      padding: 30px
+      .media-content
+        text-align: center
+        h3
+          color: #ffffff
+          font-size: 22px
+        p
+          line-height: 20px
+    .media-form 
+      .control
+        margin-bottom: 15px
+        text-align: center
+        input
+          border: medium none
+          border-radius: 0 
+        .button
+          &.is-success
+            background: #000000 none repeat scroll 0 0
+            border-radius: 0
+            height: auto
+            width: 100%
+      .media-bottom-btns 
+        .field
+          box-sizing: border-box
+          float: left
+          width: 50%
+          margin: 0
+          padding: 0 10px
+          .control
+            margin: 0
+            .button
+              &.is-primery
+                background: #3b5999 none repeat scroll 0 0
+                border: medium none
+                border-radius: 0
+                color: #ffffff
+                font-size: 14px
+                height: auto
+                padding: 7px
+                width: 100% 
+                
+            .button
+              &.is-success
+                background: #55acef none repeat scroll 0 0
+                border: medium none
+                font-size: 14px
+                padding: 7px
+                width: 100%
+        .field
+          &:first-child
+            padding-left: 0
+        .field
+          &:last-child
+            padding-right: 0
+.shop-footer
+  background: #222222 none repeat scroll 0 0
+  padding: 10px 0
+  text-align: center
+  .navbar-brand 
+    a
+      &.navbar-item
+        margin: auto
+		
+.appointment-btn
+  text-align: center
+  a
+    &.btn
+      &.appoitment-btn
+        background: #f00000 none repeat scroll 0 0
+        border-radius: 5px
+        clear: both
+        color: #ffffff
+        display: table
+        font-size: 16px
+        margin: 0 auto 5px
+        padding: 8px 0
+        text-align: center
+        width: 250px
+  a:last-child
+    &.btn
+      &.appoitment-btn
+        margin: 0 auto
+	  
+.about-us-section
+  &.contact-us
+    background-image: url(../img/contact-us.jpg)
+	
+#contact-us-content
+  padding: 70px 0
+  position: relative
+  .contact-image
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+    padding: 15px
+    img
+      width: 100%
+  .contact-us-form
+    padding: 15px
+    .field
+      &:first-child 
+        .control
+          float: left
+          padding: 0 10px
+          width: 50%
+          &:first-child
+            padding-left: 0
+          &:last-child
+            padding-right: 0
+    .field
+      display: table
+      width: 100%
+      .control 
+        input
+          -moz-border-bottom-colors: none
+          -moz-border-left-colors: none
+          -moz-border-right-colors: none
+          -moz-border-top-colors: none
+          border-color: -moz-use-text-color -moz-use-text-color #d3d3d3
+          border-image: none
+          border-radius: 0
+          border-style: none none solid
+          border-width: medium medium 1px
+          box-shadow: none
+          width: 100%
+          &:focus
+            border-bottom: 1px solid #f00000
+        textarea
+          border: 1px solid #d3d3d3
+          border-radius: 0
+          box-shadow: none
+          padding: 5px 10px
+          &:focus
+            border: 1px solid #f00000
+        button
+          &.button.is-link
+            background: #f00000 none repeat scroll 0 0
+            border: medium none
+            border-radius: 0
+            height: auto
+            padding: 5px
+            width: 150px
+	
+#buying-content
+  padding: 70px 0
+  .buying-content
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2)
+    color: #666666
+    line-height: 27px
+    margin: auto
+    padding: 30px
+    text-align: center
+    width: 70%
+    p 
+      a
+        color: #f00000
+        font-size: 16px
+.about-us-section
+  &.buying
+    background-image: url(../img/BuyingCollections_001.jpg)
+
+ 
